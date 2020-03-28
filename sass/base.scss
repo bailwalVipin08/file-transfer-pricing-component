@@ -13,13 +13,17 @@ html {
 
 @import 'variables';
 @import 'typography';
+@import 'media-manager';
+@import 'top-section';
 @import 'toggle-btn';
 @import 'pricing';
 @import 'buttons';
-
 
 body {
   font-family: $font-stack;
   box-sizing: inherit;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

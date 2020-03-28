@@ -1,0 +1,56 @@
+.plans-section {
+  display: flex;
+  text-align: center;
+  margin-bottom: 4rem;
+  align-items: center;
+
+  .plan {
+    border: 1px solid #000;
+    padding: 2rem 2rem;
+    width: 30rem;
+    border-radius: .8rem;
+
+    .plan-price {
+      padding: 1.5rem 4rem;
+
+      h1 {
+        display: flex;
+        align-items: center;
+        font-size: 5rem;
+        font-weight: 900;
+        span {
+          font-size: 3rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    .plan-features {
+      list-style: none;
+      padding-bottom: 2rem;
+
+      &__item {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        &:nth-child(1) {
+          border-top: 1px solid #eee;
+        }
+        border-bottom: 1px solid #eee;
+      }
+    }
+  }
+
+  .basic {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .pro {
+    padding: 4rem 2rem;
+    z-index: 20;
+  }
+
+  .master {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

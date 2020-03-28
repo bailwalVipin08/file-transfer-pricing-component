@@ -1,0 +1,18 @@
+#top-section {
+  padding-top: 2rem;
+  text-align: center;
+
+  .sub-header {
+    display: flex;
+    padding: 2rem 0;
+    align-items: center;
+
+    .plan-type {
+      padding: 2rem;
+    }
+
+    .toggle-container {
+      padding: 0 2rem;
+    }
+  }
+}
