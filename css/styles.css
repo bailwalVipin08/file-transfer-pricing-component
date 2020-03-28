@@ -10,28 +10,58 @@ html {
   box-sizing: border-box; }
 
 .heading-primary {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.5rem; }
 
 .heading-secondary {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem; }
 
 .features-text {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem; }
 
 #top-section {
-  padding-top: 2rem;
-  text-align: center; }
+  padding-top: 6rem;
+  text-align: center;
+  align-items: center;
+  color: #6d708d; }
   #top-section .sub-header {
     display: flex;
     padding: 2rem 0;
-    align-items: center; }
+    align-items: center;
+    color: #b3b5c6; }
     #top-section .sub-header .plan-type {
       padding: 2rem; }
     #top-section .sub-header .toggle-container {
       padding: 0 2rem; }
+
+.toggle-container .switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3rem;
+  background-color: #b3b5c6;
+  opacity: 0.5;
+  border-radius: 2rem;
+  cursor: pointer; }
+
+.toggle-container .switch::after {
+  content: '';
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0.2rem;
+  right: 0.25rem;
+  transition: all 0.35s; }
+
+.toggle-container .checkbox {
+  display: none; }
+
+.toggle-container .checkbox:checked + .switch::after {
+  right: 3.2rem; }
 
 .plans-section {
   display: flex;
@@ -39,49 +69,81 @@ html {
   margin-bottom: 4rem;
   align-items: center; }
   .plans-section .plan {
-    border: 1px solid #000;
+    border: 1px solid #f6f6fe;
     padding: 2rem 2rem;
     width: 30rem;
-    border-radius: .8rem; }
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1.5rem #b3b5c6;
+    color: #494c5f;
+    font-weight: 700; }
     .plans-section .plan .plan-price {
-      padding: 1.5rem 4rem; }
+      padding: 1.5rem 4rem;
+      display: flex;
+      align-items: center; }
+      .plans-section .plan .plan-price span {
+        font-size: 3rem;
+        padding-right: 1rem; }
       .plans-section .plan .plan-price h1 {
         display: flex;
         align-items: center;
         font-size: 5rem;
-        font-weight: 900; }
-        .plans-section .plan .plan-price h1 span {
-          font-size: 3rem;
-          padding-right: 1rem; }
+        font-weight: 800; }
     .plans-section .plan .plan-features {
       list-style: none;
       padding-bottom: 2rem; }
       .plans-section .plan .plan-features__item {
         font-size: 1.6rem;
         padding: 1.5rem;
-        border-bottom: 1px solid #eee; }
+        border-bottom: 1px solid #e3e3e3; }
         .plans-section .plan .plan-features__item:nth-child(1) {
-          border-top: 1px solid #eee; }
+          border-top: 1px solid #e3e3e3; }
+    .plans-section .plan .btn {
+      padding: 0.8rem 2rem;
+      width: 100%;
+      border: 1px solid #696fdd;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 700;
+      background-color: #696fdd; }
+      .plans-section .plan .btn:hover {
+        color: #696fdd;
+        background-color: transparent; }
   .plans-section .basic {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   .plans-section .pro {
     padding: 4rem 2rem;
-    z-index: 20; }
+    z-index: 20;
+    color: #fff;
+    background-color: #696fdd;
+    border: 1px solid #696fdd; }
+    .plans-section .pro .plan-features__item {
+      border-color: #ccc !important; }
+    .plans-section .pro .btn {
+      border: 0.1rem solid #f6f6fe;
+      color: #696fdd;
+      background-color: #fff; }
+      .plans-section .pro .btn:hover {
+        color: #fff;
+        background-color: transparent; }
   .plans-section .master {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
 
-.plan .btn {
-  padding: 0.8rem 2rem;
-  width: 100%;
-  border: 0.1rem solid #494c5f;
-  border-radius: 0.5rem; }
-
 body {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: inherit;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: #f6f6fe; }
+
+.attribution {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }

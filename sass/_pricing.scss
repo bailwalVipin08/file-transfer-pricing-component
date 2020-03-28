@@ -5,23 +5,27 @@
   align-items: center;
 
   .plan {
-    border: 1px solid #000;
+    border: 1px solid $color-grayish-blue-vl;
     padding: 2rem 2rem;
     width: 30rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1.5rem $color-grayish-blue-l;
+    color: $color-grayish-blue-dark;
+    font-weight: 700;
 
     .plan-price {
       padding: 1.5rem 4rem;
-
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 3rem;
+        padding-right: 1rem;
+      }
       h1 {
         display: flex;
         align-items: center;
         font-size: 5rem;
-        font-weight: 900;
-        span {
-          font-size: 3rem;
-          padding-right: 1rem;
-        }
+        font-weight: 800;
       }
     }
 
@@ -33,9 +37,24 @@
         font-size: 1.6rem;
         padding: 1.5rem;
         &:nth-child(1) {
-          border-top: 1px solid #eee;
+          border-top: 1px solid $color-grayish-blue-l2;
         }
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid $color-grayish-blue-l2;
+      }
+    }
+
+    .btn {
+      padding: 0.8rem 2rem;
+      width: 100%;
+      border: 1px solid $color-gradient-2;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 700;
+      background-color: $color-gradient-2;
+      &:hover {
+        color: $color-gradient-2;
+        background-color: transparent;
       }
     }
   }
@@ -47,6 +66,23 @@
   .pro {
     padding: 4rem 2rem;
     z-index: 20;
+    color: #fff;
+    background-color: $color-gradient-2;
+    border: 1px solid $color-gradient-2;
+    .plan-features {
+      &__item {
+        border-color: #ccc !important;
+      }
+    }
+    .btn {
+      border: 0.1rem solid $color-grayish-blue-vl;
+      color: $color-gradient-2;
+      background-color: #fff;
+      &:hover {
+        color: #fff;
+        background-color: transparent;
+      }
+    }
   }
 
   .master {

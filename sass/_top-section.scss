@@ -1,11 +1,14 @@
 #top-section {
-  padding-top: 2rem;
+  padding-top: 6rem;
   text-align: center;
+  align-items: center;
+  color: $color-grayish-blue;
 
   .sub-header {
     display: flex;
     padding: 2rem 0;
     align-items: center;
+    color: $color-grayish-blue-l;
 
     .plan-type {
       padding: 2rem;
