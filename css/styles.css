@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px;
+  box-sizing: border-box; }
+
+.heading-primary {
+  font-family: "Montserrat" sans-serif;
+  font-size: 6rem; }
+
+.heading-secondary {
+  font-family: "Montserrat" sans-serif;
+  font-size: 4rem; }
+
+.features-text {
+  font-family: "Montserrat" sans-serif;
+  font-size: 1.6rem; }
+
+body {
+  font-family: "Montserrat" sans-serif;
+  box-sizing: inherit;
+  overflow-x: hidden; }

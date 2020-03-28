@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+@import 'variables';
+@import 'typography';
+@import 'toggle-btn';
+@import 'pricing';
+@import 'buttons';
+
+
+body {
+  font-family: $font-stack;
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
