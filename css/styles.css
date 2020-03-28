@@ -11,7 +11,8 @@ html {
 
 .heading-primary {
   font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem; }
+  font-size: 3rem;
+  font-weight: 400; }
 
 .heading-secondary {
   font-family: "Montserrat", sans-serif;
@@ -25,7 +26,9 @@ html {
   padding-top: 6rem;
   text-align: center;
   align-items: center;
-  color: #6d708d; }
+  color: #6d708d;
+  background: url(../images/bg-top.svg);
+  background-position-x: 1000%; }
   #top-section .sub-header {
     display: flex;
     padding: 2rem 0;

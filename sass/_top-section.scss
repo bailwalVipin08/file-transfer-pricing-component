@@ -3,6 +3,8 @@
   text-align: center;
   align-items: center;
   color: $color-grayish-blue;
+  background: url(../images/bg-top.svg);
+  background-position-x: 1000%;
 
   .sub-header {
     display: flex;
