@@ -12,28 +12,62 @@ html {
 }
 
 @import 'variables';
-@import 'typography';
 @import 'media-manager';
+@import 'typography';
 @import 'top-section';
 @import 'toggle-btn';
 @import 'pricing';
 
 body {
   font-family: $font-stack;
-  box-sizing: inherit;
+  box-sizing: border-box;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: $color-grayish-blue-vl;
+  position: relative;
 }
 
 .attribution {
-  padding-top: 2rem;
   font-size: 1.6rem;
   text-align: center;
+  font-family: $font-stack;
+
+  a:link,
+  a:visited {
+    color: hsl(228, 45%, 44%);
+    font-weight: 600;
+  }
+
+  @include respond(phone-small) {
+    padding: 2rem;
+    line-height: 1.8;
+  }
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.bg-top {
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include respond(phone-small) {
+    right: -17.5rem;
+  }
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+
+  @include respond(phone-small) {
+    display: none;
+  }
+}
+
+.background {
+  z-index: -1;
 }

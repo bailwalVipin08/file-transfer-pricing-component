@@ -2,22 +2,28 @@
   padding-top: 6rem;
   text-align: center;
   align-items: center;
-  color: $color-grayish-blue;
-  background: url(../images/bg-top.svg);
-  background-position-x: 1000%;
+  color: $color-grayish-blue-dark;
 
   .sub-header {
     display: flex;
     padding: 2rem 0;
     align-items: center;
-    color: $color-grayish-blue-l;
+    color: $color-grayish-blue;
 
     .plan-type {
       padding: 2rem;
+
+      @include respond(phone-small) {
+        padding: 2rem 1rem;
+      }
     }
 
     .toggle-container {
       padding: 0 2rem;
     }
+  }
+
+  @include respond(phone-small) {
+    padding: 6rem 8rem;
   }
 }

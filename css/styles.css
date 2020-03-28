@@ -12,11 +12,17 @@ html {
 .heading-primary {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  font-weight: 400; }
+  font-weight: 700; }
+  @media (max-width: 23.4375em) {
+    .heading-primary {
+      font-size: 2.5rem; } }
 
 .heading-secondary {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem; }
+  @media (max-width: 23.4375em) {
+    .heading-secondary {
+      font-size: 1.6rem; } }
 
 .features-text {
   font-family: "Montserrat", sans-serif;
@@ -26,18 +32,22 @@ html {
   padding-top: 6rem;
   text-align: center;
   align-items: center;
-  color: #6d708d;
-  background: url(../images/bg-top.svg);
-  background-position-x: 1000%; }
+  color: #494c5f; }
   #top-section .sub-header {
     display: flex;
     padding: 2rem 0;
     align-items: center;
-    color: #b3b5c6; }
+    color: #6d708d; }
     #top-section .sub-header .plan-type {
       padding: 2rem; }
+      @media (max-width: 23.4375em) {
+        #top-section .sub-header .plan-type {
+          padding: 2rem 1rem; } }
     #top-section .sub-header .toggle-container {
       padding: 0 2rem; }
+  @media (max-width: 23.4375em) {
+    #top-section {
+      padding: 6rem 8rem; } }
 
 .toggle-container .switch {
   position: relative;
@@ -73,16 +83,18 @@ html {
   align-items: center; }
   .plans-section .plan {
     border: 1px solid #f6f6fe;
-    padding: 2rem 2rem;
+    padding: 2rem;
     width: 30rem;
     border-radius: 0.8rem;
-    box-shadow: 0 0.5rem 1.5rem #b3b5c6;
+    box-shadow: 0 0.6rem 1.6rem #b3b5c6;
     color: #494c5f;
-    font-weight: 700; }
+    font-weight: 600;
+    background-color: #f6f6fe; }
     .plans-section .plan .plan-price {
       padding: 1.5rem 4rem;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .plans-section .plan .plan-price span {
         font-size: 3rem;
         padding-right: 1rem; }
@@ -101,7 +113,7 @@ html {
         .plans-section .plan .plan-features__item:nth-child(1) {
           border-top: 1px solid #e3e3e3; }
     .plans-section .plan .btn {
-      padding: 0.8rem 2rem;
+      padding: 1rem 2rem;
       width: 100%;
       border: 1px solid #696fdd;
       border-radius: 0.5rem;
@@ -112,17 +124,23 @@ html {
       .plans-section .plan .btn:hover {
         color: #696fdd;
         background-color: transparent; }
+    @media (max-width: 56.25em) {
+      .plans-section .plan {
+        width: 26rem;
+        padding: 4rem 2rem; }
+        .plans-section .plan .plan-price h1 {
+          font-size: 4rem; }
+        .plans-section .plan .plan-price span {
+          font-size: 2rem; } }
   .plans-section .basic {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   .plans-section .pro {
     padding: 4rem 2rem;
-    z-index: 20;
+    z-index: 10;
     color: #fff;
     background-color: #696fdd;
     border: 1px solid #696fdd; }
-    .plans-section .pro .plan-features__item {
-      border-color: #ccc !important; }
     .plans-section .pro .btn {
       border: 0.1rem solid #f6f6fe;
       color: #696fdd;
@@ -133,20 +151,59 @@ html {
   .plans-section .master {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
+  @media (max-width: 37.5em) {
+    .plans-section {
+      flex-direction: column; }
+      .plans-section .plan {
+        width: 33rem;
+        margin-top: 3rem;
+        border-radius: 0.8rem; }
+        .plans-section .plan .plan-price h1 {
+          font-size: 5rem; } }
+  @media (max-width: 23.4375em) {
+    .plans-section .plan {
+      width: 30rem; } }
 
 body {
   font-family: "Montserrat", sans-serif;
-  box-sizing: inherit;
+  box-sizing: border-box;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f6f6fe; }
+  justify-content: center;
+  background-color: #f6f6fe;
+  position: relative; }
 
 .attribution {
-  padding-top: 2rem;
   font-size: 1.6rem;
-  text-align: center; }
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
+  .attribution a:link,
+  .attribution a:visited {
+    color: #3e52a3;
+    font-weight: 600; }
+  @media (max-width: 23.4375em) {
+    .attribution {
+      padding: 2rem;
+      line-height: 1.8; } }
 
-.attribution a {
-  color: #3e52a3; }
+.bg-top {
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  @media (max-width: 23.4375em) {
+    .bg-top {
+      right: -17.5rem; } }
+
+.bg-bottom {
+  position: absolute;
+  bottom: -3rem;
+  left: 0; }
+  @media (max-width: 23.4375em) {
+    .bg-bottom {
+      display: none; } }
+
+.background {
+  z-index: -1; }
